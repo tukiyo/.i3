@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $mod3 Mod3
 
 # font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal-ja-13-120-75-75-C-70-iso10646-1
@@ -143,3 +144,6 @@ bar {
 exec i3-sensible-terminal &
 exec google-chrome &
 #exec i3-msg split v
+exec xmodmap -e 'add mod3 = Muhenkan'
+bindsym $mod3+h focus left
+bindsym $mod3+l focus right
