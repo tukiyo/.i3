@@ -31,6 +31,8 @@ bindsym $mod+j focus left
 bindsym $mod+semicolon focus down
 #bindsym $mod+h focus up
 bindsym $mod+k focus right
+bindsym $mod+Tab focus right
+bindsym $mod+Shift+Tab focus left
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -140,3 +142,4 @@ bar {
 }
 exec i3-sensible-terminal &
 exec google-chrome &
+#exec i3-msg split v
